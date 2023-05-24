@@ -1,0 +1,102 @@
+// Основа
+
+.layers-main {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.layers {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  transition: $transition;
+
+  will-change: transform;
+}
+
+
+/// Текст
+.layers__text {
+  display: inline-block;
+  position: absolute;
+  transition: $transition;
+  will-change: transform;
+
+  right: 5rem;
+  top: 9rem;
+
+  z-index: 1;
+
+  @include mediaTabletMini {
+    z-index: 3;
+  }
+
+  transform: translate3d(0, calc(var(--scrollTop) * 1.1), 0);
+  will-change: transform;
+}
+.layers_title {
+  font-size: calc($index *2.5);
+  font-weight: 700;
+  color: $text;
+  text-shadow: 0 0 10px #DE908B;
+}
+.layers_subtitle {
+  font-size: calc($index *1.5);
+  color: #d3d5d4;
+  text-shadow: 0 0 10px #de908b;
+}
+
+// Задний фон
+
+.layers__base {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.2),0);
+  will-change: transform;
+  z-index: 0;
+
+}
+.layers__small-moon {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.2),0);
+  will-change: transform;
+  z-index: 2
+}
+.layers__big-moon {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.2),0);
+  will-change: transform;
+  z-index: 3;
+
+  @include mediaTabletMini {
+    z-index: 1;
+  }
+}
+.layers__top {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.4),0);
+  will-change: transform;
+  z-index: 4
+}
+.layers__midle {
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6),0);
+  will-change: transform;
+  z-index: 5
+}
+.layers__bottom {
+  transform: translate3d(0, calc(var(--scrollTop) / 2),0);
+  will-change: transform;
+  z-index: 6
+}
+.layers__man {
+  transform: translate3d(0, calc(var(--scrollTop) / 5),0);
+  will-change: transform;
+  z-index: 7
+}

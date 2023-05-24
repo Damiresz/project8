@@ -1,0 +1,28 @@
+
+// Цвета
+$bg: #1c171b;
+
+$text: #d3d5d4;
+$shadow-text: #DE908B;
+
+
+// шрифты 
+
+$font-main: "Open Sans Condensed", sans-serif;
+$index: calc(1vw + 1vh);
+
+// Для секции model3D
+$gutter: 30px;
+$side-small: 26;
+$side-big:36;
+
+// Адаптивные расширения
+$tablet: 1142px;
+$tabletMini: 768px;
+$phone: 576px;
+
+// Трансформация
+
+$transition: transform 1.5s cubic-bezier(.075, 0.5, 0, 1) ;
+$transition2:  .75s cubic-bezier(.075, 0.5, 0, 1) ;
+

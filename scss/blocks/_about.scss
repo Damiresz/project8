@@ -1,0 +1,21 @@
+.about {
+  min-height: 120vh;
+  position: relative;
+}
+
+.hero {
+  width: calc($index *32);
+  position: absolute;
+  top:calc($index *10);
+  right:5vw;
+}
+
+
+
+.title-main {
+  position: absolute;
+  font-size: calc($index *4);
+  width: min-content;
+  top:calc($index *15);
+  left:20vw;
+}

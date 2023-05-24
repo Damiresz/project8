@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Raleway_f;
+  src: url(./../fonts/raleway-regular.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Raleway_f;
+  src: url(./../fonts/raleway-black.woff2);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: Open Sans Condensed;
+  src: url(./../fonts/Open\ Sans\ Condensed/OpenSansCondensed-Bold.ttf)
+    format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Open Sans Condensed;
+  font-weight: 300;
+  src: url(./../fonts/Open\ Sans\ Condensed/OpenSansCondensed-Light.ttf)
+    format("truetype");
+}
+
+
+body {
+  background-color: $bg;
+  color: #fff;
+  font-family: $font-main;
+  font-weight: 300;
+  position: relative;
+}
+.Scrollsmoother-content {
+  will-change: transform;
+}
+
+.container {
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
+.none {
+  display: none !important;
+}

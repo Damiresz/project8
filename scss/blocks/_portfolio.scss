@@ -1,0 +1,49 @@
+.portfolio {
+  min-height: 100vh;
+  position: relative;
+}
+
+.galary {
+  display: flex;
+
+  &>* {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.galary__item {
+  max-width: calc($index *19);
+  margin-bottom: calc($index *10);
+  max-height: 180vh;
+  border-radius: 8px;
+  
+
+}
+
+.galary__left {
+  margin-top: calc($index *16);
+}
+
+.galary__right .galary__item {
+  margin-bottom: 0;
+  margin-top: calc($index * 7);
+}
+
+.text-block {
+  position: relative;
+}
+
+.text-block_h {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: calc($index );
+}
+
+.empty {
+  height: 50vh;
+}
+

@@ -1,0 +1,27 @@
+.header {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: calc($index *20);// высоту определяем через calc что бы не съезжала при маштабировании
+    background-image: url(./../img/header/cloud.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: calc($index * -15);  // позиционируем через calc что бы не съезжала с линии при маштабировании
+  }
+  
+}
+
+
+.header__contents {
+  min-height: 100vh;
+  position: relative;
+  z-index: 10;
+  
+}
+
+
+
